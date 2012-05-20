@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from ZeldaMap import ZeldaMap
+from SpriteGrid import SpriteGrid
 
 width = 13
 height = 12
@@ -201,7 +201,7 @@ testmap =  [176,177,120,121,121, 18, 19, 20,121,121,122,176,177,
             ___]
 
 
-testmap = ZeldaMap(width,height,testmap)
+testmap = SpriteGrid(width,height,testmap)
 testmap.generate_css()
-testmap.generate_divlist()
+testmap.generate_html()
 print 'done'
